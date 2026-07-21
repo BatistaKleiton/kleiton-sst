@@ -9,7 +9,8 @@
 <title>Kleiton Santos Batista | Engenharia e SST</title>
 
 <meta name="description"
-content="Engenharia de Segurança do Trabalho, PGR, LTCAT, Laudos, Perícias, Consultoria Ambiental e Treinamentos.">
+content="Engenharia de Segurança do Trabalho, PGR, LTCAT, Laudos, Consultoria Ambiental e Treinamentos.">
+
 
 <style>
 
@@ -20,149 +21,389 @@ box-sizing:border-box;
 font-family:'Segoe UI',Arial,sans-serif;
 }
 
+
 body{
+
 background:
 radial-gradient(circle at top,#1e3a8a 0%,#0f172a 45%,#020617 100%);
+
 display:flex;
 justify-content:center;
 align-items:center;
+
 min-height:100vh;
+
 padding:25px;
+
 }
+
+
 
 .card{
+
 width:550px;
+
 max-width:100%;
+
 background:rgba(255,255,255,.08);
+
 backdrop-filter:blur(18px);
+
 border:1px solid rgba(255,255,255,.15);
+
 border-radius:24px;
+
 padding:45px;
+
 text-align:center;
+
 box-shadow:0 25px 60px rgba(0,0,0,.45);
+
 }
 
 
-/* Foto do engenheiro */
+
+/* Foto profissional */
 
 .foto{
-    width:280px;
-    height:320px;
-    object-fit:cover;
-    border-radius:15px;
-    border:3px solid white;
-    display:block;
-    margin:0 auto 30px;
-    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+width:280px;
+
+height:320px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+border:3px solid white;
+
+display:block;
+
+margin:0 auto 30px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.45);
+
 }
+
+
 
 h1{
+
 color:#fff;
+
 font-size:32px;
-margin-bottom:15px;
+
+margin-bottom:20px;
+
 }
+
+
 
 p{
+
 color:#d1d5db;
-line-height:1.8;
-font-size:17px;
-margin-bottom:20px;
+
+line-height:1.7;
+
+font-size:16px;
+
+margin-bottom:15px;
+
 }
+
+
+
+/* Serviços */
 
 .servicos{
+
+margin-top:30px;
+
 text-align:left;
-margin:25px 0;
-color:#fff;
+
 }
+
+
 
 .servicos h2{
-font-size:22px;
+
+color:white;
+
+font-size:24px;
+
 margin-bottom:15px;
+
 }
 
-.servicos ul{
-padding-left:20px;
-line-height:2;
+
+
+/* Botões das abas */
+
+.aba{
+
+width:100%;
+
+padding:15px;
+
+margin-top:10px;
+
+border:none;
+
+border-radius:10px;
+
+background:rgba(255,255,255,.15);
+
+color:white;
+
+font-size:16px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+text-align:left;
+
+transition:.3s;
+
 }
+
+
+
+.aba:hover{
+
+background:rgba(255,255,255,.30);
+
+}
+
+
+
+/* Conteúdo das abas */
+
+.conteudo{
+
+display:none;
+
+color:#d1d5db;
+
+padding:15px;
+
+line-height:1.6;
+
+font-size:15px;
+
+}
+
+
+
+/* WhatsApp */
 
 .botao{
+
 display:inline-block;
+
 width:100%;
+
 padding:18px;
+
 text-decoration:none;
+
 border-radius:14px;
+
 font-size:18px;
+
 font-weight:bold;
+
 color:#fff;
+
 background:linear-gradient(135deg,#25D366,#128C7E);
+
 transition:.25s;
-margin-top:20px;
+
+margin-top:30px;
+
 }
+
+
 
 .botao:hover{
+
 transform:translateY(-3px);
+
 box-shadow:0 15px 35px rgba(37,211,102,.45);
+
 }
 
+
+
 footer{
+
 margin-top:30px;
+
 color:#94a3b8;
+
 font-size:13px;
+
 }
+
 
 </style>
 
+
 </head>
+
 
 <body>
 
+
 <div class="card">
 
-<!-- Troque pela sua logo -->
 
-<img class="foto" src="foto.kleiton.jpg" alt="Kleiton Santos Batista">
+<img class="foto" src="foto.jpg" alt="Kleiton Santos Batista">
+
+
 
 <h1>Kleiton Santos Batista</h1>
+
+
 
 <p>
 Engenheiro especializado em Segurança do Trabalho e Consultoria Ambiental.
 </p>
-    
+
+
 <p>
-Mestre em Engenharia Civil e Ambiental.
+Mestre em Engenharia Civil e Ambiental, com atuação voltada à prevenção de riscos,
+conformidade legal e melhoria das condições de trabalho.
 </p>
-    
+
+
 <p>
 Prestando serviços para empresas de diversos segmentos, oferecendo soluções
 técnicas em Saúde e Segurança do Trabalho, Gestão Ambiental e Engenharia.
 </p>
 
+
+
 <div class="servicos">
+
 
 <h2>Serviços</h2>
 
-<ul>
-<li>✔ PGR - Programa de Gerenciamento de Riscos</li>
-<li>✔ LTCAT</li>
-<li>✔ LIP</li>
-<li>✔ Laudos de Insalubridade e Periculosidade</li>
-<li>✔ Avaliações de Ruído, Calor e Iluminância</li>
-<li>✔ Análise Ergonômica do Trabalho (AET)</li>
-<li>✔ Gestão de SST</li>
-<li>✔ Consultoria Ambiental</li>
-<li>✔ Licenciamento Ambiental</li>
-<li>✔ Treinamentos e Capacitações</li>
-</ul>
+
+
+<button class="aba">
+PGR - Programa de Gerenciamento de Riscos
+</button>
+
+<div class="conteudo">
+
+Elaboração do PGR conforme a NR-01, identificação de perigos,
+avaliação dos riscos ocupacionais e definição de medidas preventivas.
 
 </div>
 
+
+
+
+<button class="aba">
+LTCAT
+</button>
+
+<div class="conteudo">
+
+Elaboração de Laudo Técnico das Condições Ambientais do Trabalho
+para avaliação previdenciária e caracterização de exposições ocupacionais.
+
+</div>
+
+
+
+
+<button class="aba">
+Laudos de Insalubridade e Periculosidade
+</button>
+
+<div class="conteudo">
+
+Avaliações técnicas das condições ambientais de trabalho conforme
+legislação vigente e Normas Regulamentadoras.
+
+</div>
+
+
+
+
+<button class="aba">
+Avaliações Ambientais
+</button>
+
+<div class="conteudo">
+
+Medições e avaliações de agentes físicos como ruído, calor,
+iluminância e demais fatores ocupacionais.
+
+</div>
+
+
+
+
+<button class="aba">
+Análise Ergonômica do Trabalho - AET
+</button>
+
+<div class="conteudo">
+
+Avaliação das condições ergonômicas visando adequação das atividades,
+prevenção de doenças ocupacionais e melhoria do ambiente de trabalho.
+
+</div>
+
+
+
+
+<button class="aba">
+Consultoria Ambiental
+</button>
+
+<div class="conteudo">
+
+Consultoria em processos ambientais, adequação legal,
+licenciamento ambiental e gestão ambiental empresarial.
+
+</div>
+
+
+
+
+<button class="aba">
+Treinamentos e Capacitações
+</button>
+
+<div class="conteudo">
+
+Treinamentos em Segurança do Trabalho, prevenção de acidentes
+e capacitação de colaboradores.
+
+</div>
+
+
+
+</div>
+
+
+
 <a class="botao"
+
 href="https://wa.me/5581993352921?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+
 target="_blank">
 
-💬 Canal de dúvidas
+💬 CONTATO
 
 </a>
+
+
+
 
 <footer>
 
@@ -170,7 +411,49 @@ Atendimento em todo o Brasil
 
 </footer>
 
+
+
 </div>
 
+
+
+<script>
+
+
+let abas = document.querySelectorAll(".aba");
+
+
+abas.forEach(function(aba){
+
+
+aba.onclick=function(){
+
+
+let conteudo=this.nextElementSibling;
+
+
+if(conteudo.style.display==="block"){
+
+conteudo.style.display="none";
+
+}
+
+else{
+
+conteudo.style.display="block";
+
+}
+
+
+}
+
+
+});
+
+
+</script>
+
+
 </body>
+
 </html>
