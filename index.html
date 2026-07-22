@@ -407,14 +407,16 @@ target="_blank">
 
 <footer>
 
-    <p>Kleiton Santos Batista</p>
+    <p><strong>Kleiton Santos Batista</strong></p>
 
     <p>Engenharia de Segurança do Trabalho</p>
 
     <p>SEGURANÇA • AMBIENTE • ENGENHARIA</p>
 
-    <p id="visitas">
-        👁️ Carregando visualizações...
+    <p>
+        <img
+            src="https://api.visitorbadge.io/api/visitors?path=batistakleiton.github.io/kleiton-sst&label=Visualizações&labelColor=%230066CC&countColor=%23003366"
+            alt="Contador de visualizações">
     </p>
 
     <p>© 2026 Todos os direitos reservados</p>
@@ -450,29 +452,8 @@ abas.forEach(function(aba){
 
 </script>
 
-<!-- Script do contador de visualizações -->
-<script>
-
-fetch("https://api.countapi.xyz/hit/kleiton-santos-batista-site/visitas")
-.then(response => response.json())
-.then(data => {
-
-    document.getElementById("visitas").innerHTML =
-    "👁️ Visualizações: <strong>" + data.value + "</strong>";
-
-})
-.catch(error => {
-
-    console.error(error);
-
-    document.getElementById("visitas").innerHTML =
-    "👁️ Visualizações indisponíveis";
-
-});
-
-</script>
-
 </body>
+
 </html>
 
 </body>
