@@ -407,66 +407,73 @@ target="_blank">
 
 <footer>
 
-<p>
-Kleiton Santos Batista
-</p>
+    <p>Kleiton Santos Batista</p>
 
-<p>
-Engenharia de Segurança do Trabalho
-</p>
+    <p>Engenharia de Segurança do Trabalho</p>
 
-<p>
-SEGURANÇA • AMBIENTE • ENGENHARIA
-</p>
+    <p>SEGURANÇA • AMBIENTE • ENGENHARIA</p>
 
-<p>
-© 2026 Todos os direitos reservados
-</p>
+    <p id="visitas">
+        👁️ Carregando visualizações...
+    </p>
+
+    <p>© 2026 Todos os direitos reservados</p>
 
 </footer>
 
-
-
 </div>
 
-
-
+<!-- Script das abas -->
 <script>
 
-
-let abas = document.querySelectorAll(".aba");
-
+const abas = document.querySelectorAll(".aba");
 
 abas.forEach(function(aba){
 
+    aba.addEventListener("click", function(){
 
-aba.onclick=function(){
+        const conteudo = this.nextElementSibling;
 
+        if(conteudo.style.display === "block"){
 
-let conteudo=this.nextElementSibling;
+            conteudo.style.display = "none";
 
+        }else{
 
-if(conteudo.style.display==="block"){
+            conteudo.style.display = "block";
 
-conteudo.style.display="none";
+        }
 
-}
-
-else{
-
-conteudo.style.display="block";
-
-}
-
-
-}
-
+    });
 
 });
 
+</script>
+
+<!-- Script do contador de visualizações -->
+<script>
+
+fetch("https://api.countapi.xyz/hit/kleiton-santos-batista-site/visitas")
+.then(response => response.json())
+.then(data => {
+
+    document.getElementById("visitas").innerHTML =
+    "👁️ Visualizações: <strong>" + data.value + "</strong>";
+
+})
+.catch(error => {
+
+    console.error(error);
+
+    document.getElementById("visitas").innerHTML =
+    "👁️ Visualizações indisponíveis";
+
+});
 
 </script>
 
+</body>
+</html>
 
 </body>
 
